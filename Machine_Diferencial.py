@@ -1,6 +1,3 @@
-# Função para calcular o resultado da diferença
-from ast import main
-
 
 def resultado (diferenca, i): 
     if diferenca[i][-1] == diferenca[-1][-1]:
@@ -8,7 +5,7 @@ def resultado (diferenca, i):
     else:
         return diferenca[i][-1] - resultado(diferenca, i + 1)
     
-#Função que simula o comportamento da máquina de babbage 
+
 def func_babbage(y):
     tamanho = len(y)
     tabela_resultados = [y]
@@ -20,7 +17,7 @@ def func_babbage(y):
         tabela_resultados.append(nova_linha)
     return tabela_resultados
 
-#Função para calcular o valor do polinômio
+
 def func_polinomios(x, coeficientes, grau):
     calculo_soma = 0 
     auxiliar = 0 
